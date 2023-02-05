@@ -1,17 +1,21 @@
 package com.example.assignment2.controller;
 
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 @RestController
 public class MainController {
 
-    @RequestMapping("/")
+    @PostMapping("/")
+    public String test(@RequestBody String s){
+//        System.out.println(s);
+        System.out.println(s);
+        return "success";
+    }
+
+    @GetMapping("/")
     public String test(){
-
-        return "test";
-
+//        System.out.println(s);
+        return "GET method";
     }
 
 
