@@ -1,5 +1,6 @@
 package com.example.assignment2.controller;
 
+import com.example.assignment2.utils.CloneRepository;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
@@ -15,9 +16,11 @@ public class MainController {
     @GetMapping("/")
     public String test(){
 //        System.out.println(s);
+//        CloneRepository.cloneRepository("https://github.com/ppplbngth/CI-server.git", "./repo");
+        CloneRepository.cloneRepository("https://github.com/ppplbngth/CI-server", "D:/REPO");
         return "GET method";
     }
 
 
 }
-// add something
+// add something 2
