@@ -11,6 +11,7 @@ public class CloneRepository {
         try {
             Git.cloneRepository()
                 .setURI(repositoryURL)
+                    .setBranch("test")
                 .setDirectory(new File(localPath))
                 .call();
             System.out.println("Repository cloned successfully to " + localPath);
