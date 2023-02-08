@@ -80,7 +80,7 @@ public class CIServer extends AbstractHandler
         }
     }
  
-    // used to start the CI server in command line
+    // used to start the CI server in command line.
     public static void main(String[] args) throws Exception
     {
 
