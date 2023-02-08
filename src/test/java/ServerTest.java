@@ -5,7 +5,7 @@ import static org.junit.Assert.assertTrue;
 public class ServerTest {
     
     /**
-     * Dummy test
+     * Dummy test 2
      */
     @Test
     public void FirstTest(){
